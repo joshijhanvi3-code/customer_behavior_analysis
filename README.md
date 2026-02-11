@@ -1,111 +1,91 @@
-📊 Data Analytics Project – End-to-End Analysis & Dashboard
-Overview
+# 📊 Data Analytics Project – End-to-End Analysis & Dashboard
+
+## Overview
 
 This project demonstrates an end-to-end data analytics workflow, starting from raw data exploration to building an interactive business dashboard.
 
-The goal is to extract meaningful insights using Python and SQL and present them clearly through Power BI and a final presentation.
+The goal is to extract meaningful insights from data using Python and SQL, and present them clearly through Power BI and a final presentation.
 
 The project covers:
 
-Data loading
+- Data loading  
+- Data cleaning  
+- Exploratory analysis  
+- Database querying  
+- Visualization  
+- Reporting  
 
-Data cleaning
+---
 
-Exploratory analysis
+## Dataset
 
-Database querying
+**Source:** `customer_shopping_behavior.csv`  
+**Domain:** Sales, Customers, Business Performance  
 
-Visualization
+**Description:**  
+The dataset contains structured data related to business performance, including metrics such as customer information, transactions, and key numerical fields used for analysis.
 
-Business reporting
+---
 
-Dataset
+## Tools & Technologies
 
-Source: customer_shopping_behavior.csv
-Domain: Sales / Customers / Business Performance
+- **Python (Pandas, NumPy)** – Data cleaning & preprocessing  
+- **PostgreSQL** – Business query analysis  
+- **SQL** – Aggregations, filtering, segmentation  
+- **Power BI** – Interactive dashboard  
+- **Gamma** – Business presentation  
+- **GitHub** – Version control & documentation  
 
-Description:
-Structured business data containing customer information, transactions, and key numerical metrics used for analysis.
+---
 
-Tools & Technologies
+## Project Workflow
 
-Python (Pandas, NumPy) – Data cleaning & preprocessing
+### Step 1: Data Preparation (Python)
 
-PostgreSQL – Database storage
+- Loaded dataset using Pandas  
+- Checked structure and summary statistics  
+- Handled missing values in `review_rating` using median imputation by category  
+- Standardized column names to `snake_case`  
+- Created `age_group` using binning  
+- Created `purchase_frequency_days` feature  
+- Removed redundant columns  
+- Loaded cleaned dataset into PostgreSQL  
 
-SQL – Aggregations, filtering, segmentation
+---
 
-Power BI – Interactive dashboard
-
-Gamma – Business presentation
-
-GitHub – Version control & documentation
-
-Project Workflow
-Step 1: Data Preparation (Python)
-
-Loaded dataset using Pandas
-
-Checked structure and summary statistics
-
-Handled missing values in review_rating using median imputation (by category)
-
-Standardized column names to snake_case
-
-Created age_group using binning
-
-Created purchase_frequency_days feature
-
-Removed redundant columns
-
-Loaded cleaned dataset into PostgreSQL
-
-Step 2: Business Analysis (SQL – PostgreSQL)
+### Step 2: Business Analysis (SQL – PostgreSQL)
 
 Key business questions answered:
 
-Revenue comparison by gender
+- Revenue comparison by gender  
+- High-spending discount users  
+- Top 5 products by rating  
+- Shipping type comparison  
+- Subscribers vs non-subscribers analysis  
+- Discount-dependent products  
+- Customer segmentation (New, Returning, Loyal)  
+- Top 3 products per category  
+- Repeat buyers vs subscription likelihood  
+- Revenue contribution by age group  
 
-High-spending discount users
+---
 
-Top 5 products by rating
+## Dashboard (Power BI)
 
-Shipping type comparison
+An interactive dashboard was built to visualize:
 
-Subscribers vs non-subscribers analysis
+- KPIs (Total Customers, Average Purchase Amount, Average Rating)  
+- Revenue trends  
+- Customer segmentation insights  
+- Product and shipping performance  
+- Subscription impact on revenue  
 
-Discount-dependent products
+---
 
-Customer segmentation (New, Returning, Loyal)
+## Business Insights
 
-Top 3 products per category
-
-Repeat buyers vs subscription likelihood
-
-Revenue contribution by age group
-
-Dashboard (Power BI)
-
-The interactive dashboard visualizes:
-
-KPIs (Total Customers, Average Purchase Amount, Average Rating)
-
-Revenue trends
-
-Customer segmentation insights
-
-Product and shipping performance
-
-Subscription impact on revenue
-
-Business Insights
-
-Subscribers contribute higher average revenue
-
-Loyal customers drive significant repeat purchases
-
-Certain products rely heavily on discounts
-
-Specific age groups generate higher revenue
-
-Express shipping users tend to spend more
+- Subscribers contribute higher average revenue  
+- Loyal customers drive significant repeat purchases  
+- Certain products rely heavily on discounts  
+- Specific age groups generate higher revenue  
+- Express shipping users tend to spend more  
